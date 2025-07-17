@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* common styles */
+
+
+.work-sans-font,
+body {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.btn {
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 32px;
+    font-weight: 600;
+}
+
+.primary-bg-color {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+
+p,
+.dark-3 {
+    /* dark-3 */
+    font-size: 1rem;
+    font-weight: 400;
+    color: #727272;
+    margin-top: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+/* header nav styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.header-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header-list {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.header-list a {
+    text-decoration: none;
+    color: #424242;
+}
+
+/* banner styles */
+.banner-content {
+    max-width: 730px;
+    width: 100%;
+    margin: 80px auto;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.banner-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.banner-image img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+/* quick list section styles */
+.quick-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 85px auto;
+    gap: 50px;
+}
+
+.quick-list-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.quick-list-content {
+    max-width: 450px;
+}
+
+.quick-list-content span {
+    font-size: 2.8rem;
+    font-weight: bold;
+
+}
+
+#quick-list {
+    font-weight: 500;
+}
+
+#features {
+    color: rgba(255, 144, 14, 1);
+}
+
+
+/* responsive media query */
+@media screen and (max-width:576px) {
+
+    nav,
+    .header-list,
+     .quick-list{
+        flex-direction: column;
+        gap: 20px;
+
+    }
+    .quick-list-image{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .quick-list-content{
+        margin: 20px;
+    }
+}
